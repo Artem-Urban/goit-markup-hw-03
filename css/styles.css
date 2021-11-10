@@ -54,13 +54,15 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
 .header-item {
   background-color: var(--primary-white-color);
   display: flex;
   align-items: center;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
 }
 .nav-link,
 .link,
@@ -222,9 +224,9 @@ ul {
 .section-team {
   background-color: var(--secondary-bg-color);
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .team-title {
-  padding-top: 94px;
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -233,9 +235,6 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-.team-img {
-  margin-bottom: 30px;
 }
 
 .title {
@@ -250,7 +249,6 @@ ul {
 .team-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
@@ -269,6 +267,10 @@ ul {
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
+}
+.team-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /* Footer */
 .footer {
@@ -306,8 +308,7 @@ footer .link {
   border-radius: 4px;
   margin: 0 auto;
   border: 0;
-  margin-left: 30px;
-  margin-bottom: 50px;
+  margin-left: 8px;
   padding: 6px 22px;
   max-width: 145px;
 
@@ -323,6 +324,7 @@ footer .link {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button:hover,
@@ -330,10 +332,11 @@ footer .link {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+/* ---Portfolio----  */
 .headline {
-  margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -343,8 +346,7 @@ footer .link {
 
 .portfolio-text {
   margin-top: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -354,9 +356,21 @@ footer .link {
 }
 .portfolio-item {
   width: 370px;
-  margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 .portfolio-item:not(:nth-child(3n)) {
   margin-right: 30px;
+}
+.portfolio-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.portfolio-img {
+  display: block;
+}
+.portfolio-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
 }
